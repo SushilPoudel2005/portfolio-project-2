@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Machine learning, research and data analysis projects by Sushil Poudel.">
+  <meta name="author" content="Sushil Poudel">
+  <title>Portfolio | Sushil Poudel</title>
+  <link rel="icon" href="images/profile.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark site-nav sticky-top" aria-label="Main navigation">
+      <div class="container">
+        <a class="brand-logo" href="index.html">
+          <span class="brand-mark">SP</span>
+          <span>Sushil Poudel</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="signin.html">Sign In</a></li>
+            <li class="nav-item ms-lg-2"><a class="nav-link btn-nav-cta" href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container position-relative">
+        <div class="breadcrumb-pill"><a href="index.html">Home</a><span>/</span><span>Portfolio</span></div>
+        <h1>My Portfolio</h1>
+        <p>Projects in machine learning, research and data analysis, from raw data to dashboards.</p>
+      </div>
+      <div class="banner-curve"></div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 reveal">
+          <div class="col-lg-9 text-center">
+            <span class="section-tag">Selected work</span>
+            <h2 class="section-title">Projects I'm proud of</h2>
+            <p class="text-muted-soft">
+              Each project here began as a real question: <em>what affects how hard a mineral is?</em>, <em>how do we measure
+              thousands of trees without a tape?</em>, <em>where is the farm losing money?</em> I like work where the answer
+              changes what someone does next.
+            </p>
+            <p class="text-muted-soft mb-0">
+              Use the filters to browse by area. You can find code for many of these on my
+              <a href="https://github.com/SushilPoudel2005" target="_blank" rel="noopener">GitHub</a>.
+            </p>
+          </div>
+        </div>
+
+        <div class="filter-bar text-center mb-5 reveal" role="group" aria-label="Filter projects">
+          <button type="button" class="btn active" data-filter="all">All</button>
+          <button type="button" class="btn" data-filter="ml">Machine Learning</button>
+          <button type="button" class="btn" data-filter="data">Data Analysis</button>
+          <button type="button" class="btn" data-filter="research">Research</button>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="ml">
+            <article class="project-card">
+              <div class="project-thumb bg-grad-pink"><span class="thumb-tag">Machine Learning</span><i class="bi bi-gem"></i></div>
+              <div class="project-body">
+                <h3 class="h5">Mineral-ML Prediction Pipeline</h3>
+                <p class="text-muted-soft small">Led a student team to predict mineral hardness, density, transparency, crystal system and industry application from chemical data.</p>
+                <p class="text-muted-soft small mb-0">We used Random Forest and XGBoost models, with features built by parsing chemical formulas into weighted elemental properties.</p>
+                <div class="tags"><span class="chip">Python</span><span class="chip">XGBoost</span><span class="chip">Random Forest</span></div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="ml data">
+            <article class="project-card">
+              <div class="project-thumb bg-grad-purple"><span class="thumb-tag">Visualization</span><i class="bi bi-window-stack"></i></div>
+              <div class="project-body">
+                <h3 class="h5">Mineral Explorer Dashboard</h3>
+                <p class="text-muted-soft small">An interactive Streamlit app that lets non-technical users filter the mineral dataset, view clusters and run live predictions.</p>
+                <p class="text-muted-soft small mb-0">It also shows the exploratory work: K-Means clustering plus PCA and t-SNE projections of the feature space.</p>
+                <div class="tags"><span class="chip">Streamlit</span><span class="chip">K-Means</span><span class="chip">t-SNE</span></div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="research">
+            <article class="project-card">
+              <div class="project-thumb bg-grad-teal"><span class="thumb-tag">Research</span><i class="bi bi-tree-fill"></i></div>
+              <div class="project-body">
+                <h3 class="h5">LiDAR Stem Taper Pipeline</h3>
+                <p class="text-muted-soft small">A Python automation pipeline that estimates tree stem diameter and taper directly from LiDAR point cloud data.</p>
+                <p class="text-muted-soft small mb-0">Measurement tables are checked against real-world data, and I write the technical documentation so future students can extend the tool.</p>
+                <div class="tags"><span class="chip">Python</span><span class="chip">LiDAR</span><span class="chip">Point Clouds</span></div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="data">
+            <article class="project-card">
+              <div class="project-thumb bg-grad-warm"><span class="thumb-tag">Data Analysis</span><i class="bi bi-database-check"></i></div>
+              <div class="project-body">
+                <h3 class="h5">Farm Data Cleanup &amp; Reporting</h3>
+                <p class="text-muted-soft small">Created, altered and cleaned SQL tables for the Soil Stewards Student Farm, removing duplicate records so production data stays reliable.</p>
+                <p class="text-muted-soft small mb-0">I built Excel summary tables to assign field tasks and track sales and attendance.</p>
+                <div class="tags"><span class="chip">SQL</span><span class="chip">Excel</span><span class="chip">Data Cleaning</span></div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="data">
+            <article class="project-card">
+              <div class="project-thumb bg-grad-yellow"><span class="thumb-tag">Forecasting</span><i class="bi bi-graph-up-arrow"></i></div>
+              <div class="project-body">
+                <h3 class="h5">Crop-Plantation Cost Curves</h3>
+                <p class="text-muted-soft small">Matplotlib curves that guide planting schedules and forecast seasonal costs for the student farm.</p>
+                <p class="text-muted-soft small mb-0">Combined with monthly revenue estimates in pandas, this work helped reduce unexpected seasonal spending by 15%.</p>
+                <div class="tags"><span class="chip">pandas</span><span class="chip">Matplotlib</span><span class="chip">Forecasting</span></div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6 col-lg-4 project-item reveal" data-category="research data">
+            <article class="project-card">
+              <div class="project-thumb bg-grad-purple"><span class="thumb-tag">Teaching</span><i class="bi bi-calculator-fill"></i></div>
+              <div class="project-body">
+                <h3 class="h5">Math &amp; Statistics Tutoring</h3>
+                <p class="text-muted-soft small">At the Math Assistance Center I tutored 500+ students, explaining statistics and math concepts in plain language.</p>
+                <p class="text-muted-soft small mb-0">I also coordinated tutor schedules and helped onboard new tutors, which strengthened my teamwork and communication skills.</p>
+                <div class="tags"><span class="chip">Statistics</span><span class="chip">Teaching</span><span class="chip">Mentoring</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pt-0">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6 reveal">
+            <span class="section-tag">How I work</span>
+            <h2 class="section-title">My process</h2>
+            <p>
+              Every project follows the same four steps: <strong>understand</strong> the question, <strong>clean</strong> the
+              data, <strong>model</strong> or analyze it, and <strong>communicate</strong> the result. I spend most of my time
+              on the first two, because a model is only as good as the data behind it.
+            </p>
+            <p class="mb-0">
+              I prefer simple, explainable tools when they work, and I document each step so others can reproduce
+              and extend it.
+            </p>
+          </div>
+          <div class="col-lg-6 reveal">
+            <div class="row g-3">
+              <div class="col-6"><div class="stat-card"><i class="bi bi-search fs-2 text-gradient"></i><div class="fw-semibold mt-2">1. Understand</div></div></div>
+              <div class="col-6"><div class="stat-card"><i class="bi bi-funnel-fill fs-2 text-gradient"></i><div class="fw-semibold mt-2">2. Clean</div></div></div>
+              <div class="col-6"><div class="stat-card"><i class="bi bi-cpu fs-2 text-gradient"></i><div class="fw-semibold mt-2">3. Model</div></div></div>
+              <div class="col-6"><div class="stat-card"><i class="bi bi-megaphone-fill fs-2 text-gradient"></i><div class="fw-semibold mt-2">4. Communicate</div></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a class="brand-logo mb-3" href="index.html"><span class="brand-mark">SP</span><span>Sushil Poudel</span></a>
+          <p class="small mt-3">Applied Mathematics &amp; Data Science student at the University of Idaho, turning messy data into clear, useful decisions.</p>
+          <div class="social mt-3">
+            <a href="https://www.linkedin.com/in/sushilPoudel" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/SushilPoudel2005" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="mailto:intern.sushil@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Explore</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Legal</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="terms.html">Terms and Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookie.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Get in touch</h5>
+          <address class="small mb-0">
+            <i class="bi bi-geo-alt-fill me-2"></i>Moscow, Idaho, USA<br>
+            <i class="bi bi-envelope-fill me-2"></i><a href="mailto:intern.sushil@gmail.com">intern.sushil@gmail.com</a>
+          </address>
+          <a href="assets/Sushil_Poudel_Resume.pdf" download class="btn btn-gradient btn-sm mt-3"><i class="bi bi-download me-2"></i>Resume</a>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <small>&copy; <span class="year">2026</span> Sushil Poudel. All rights reserved.</small>
+        <nav class="legal-menu small" aria-label="Legal">
+          <a href="terms.html">Terms</a>&middot;<a href="privacy.html">Privacy</a>&middot;<a href="cookie.html">Cookies</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+  <div class="form-toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

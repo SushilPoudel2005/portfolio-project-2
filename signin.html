@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sign in to your account.">
+  <meta name="author" content="Sushil Poudel">
+  <title>Sign In | Sushil Poudel</title>
+  <link rel="icon" href="images/profile.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark site-nav sticky-top" aria-label="Main navigation">
+      <div class="container">
+        <a class="brand-logo" href="index.html">
+          <span class="brand-mark">SP</span>
+          <span>Sushil Poudel</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="signin.html">Sign In</a></li>
+            <li class="nav-item ms-lg-2"><a class="nav-link btn-nav-cta" href="signup.html">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="container position-relative">
+        <div class="breadcrumb-pill"><a href="index.html">Home</a><span>/</span><span>Sign In</span></div>
+        <h1>Welcome Back</h1>
+        <p>Sign in to save your messages and see updates on projects you follow.</p>
+      </div>
+      <div class="banner-curve"></div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-10 reveal">
+            <div class="auth-shell row g-0">
+              <aside class="col-md-5">
+                <div class="auth-side">
+                  <img src="images/profile.jpg" alt="Sushil Poudel" class="mini-avatar mb-4">
+                  <h2 class="h3">Good to see you again!</h2>
+                  <p>
+                    Signing in lets you keep track of the messages you've sent me and get notified when I publish
+                    a new project or case study.
+                  </p>
+                  <ul class="list-unstyled small mb-0 position-relative" style="z-index:1">
+                    <li class="mb-2"><i class="bi bi-check2-circle me-2"></i>Save your contact history</li>
+                    <li class="mb-2"><i class="bi bi-check2-circle me-2"></i>Follow new projects</li>
+                    <li><i class="bi bi-check2-circle me-2"></i>Get early access to write-ups</li>
+                  </ul>
+                </div>
+              </aside>
+              <div class="col-md-7">
+                <div class="auth-form">
+                  <h3 class="h4">Sign in to your account</h3>
+                  <p class="text-muted-soft small mb-4">Enter your email and password below.</p>
+                  <form class="needs-validation" novalidate data-success="Signed in successfully! &#127881;">
+                    <div class="mb-3">
+                      <label for="signinEmail" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="signinEmail" placeholder="you@example.com" autocomplete="email" required>
+                      <div class="invalid-feedback">Please enter a valid email.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="signinPassword" class="form-label">Password</label>
+                      <div class="input-group has-validation">
+                        <input type="password" class="form-control" id="signinPassword" placeholder="Your password" autocomplete="current-password" minlength="6" required>
+                        <button class="btn btn-eye" type="button" data-target="signinPassword" aria-label="Show password"><i class="bi bi-eye"></i></button>
+                        <div class="invalid-feedback">Password must be at least 6 characters.</div>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="rememberMe">
+                        <label class="form-check-label small" for="rememberMe">Remember me</label>
+                      </div>
+                      <a href="contact.html" class="small">Forgot password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-gradient w-100"><i class="bi bi-box-arrow-in-right me-2"></i>Sign In</button>
+                  </form>
+                  <hr class="my-4">
+                  <p class="text-center small mb-0">New here? <a href="signup.html" class="fw-semibold">Create an account</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <a class="brand-logo mb-3" href="index.html"><span class="brand-mark">SP</span><span>Sushil Poudel</span></a>
+          <p class="small mt-3">Applied Mathematics &amp; Data Science student at the University of Idaho, turning messy data into clear, useful decisions.</p>
+          <div class="social mt-3">
+            <a href="https://www.linkedin.com/in/sushilPoudel" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/SushilPoudel2005" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
+            <a href="mailto:intern.sushil@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6 col-6">
+          <h5>Explore</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 col-6">
+          <h5>Legal</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="terms.html">Terms and Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookie.html">Cookie Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5>Get in touch</h5>
+          <address class="small mb-0">
+            <i class="bi bi-geo-alt-fill me-2"></i>Moscow, Idaho, USA<br>
+            <i class="bi bi-envelope-fill me-2"></i><a href="mailto:intern.sushil@gmail.com">intern.sushil@gmail.com</a>
+          </address>
+          <a href="assets/Sushil_Poudel_Resume.pdf" download class="btn btn-gradient btn-sm mt-3"><i class="bi bi-download me-2"></i>Resume</a>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <small>&copy; <span class="year">2026</span> Sushil Poudel. All rights reserved.</small>
+        <nav class="legal-menu small" aria-label="Legal">
+          <a href="terms.html">Terms</a>&middot;<a href="privacy.html">Privacy</a>&middot;<a href="cookie.html">Cookies</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+  <div class="form-toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
